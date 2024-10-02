@@ -18,15 +18,9 @@ students = {'Johnny', 'Bilbo', 'Steve', 'Khendrik', 'Aaron'}
 
 aver_grade = []
 for item in grades:
-    num = (sum(item)/len(item))
-    num = round(num, 2)
+    num = round((sum(item)/len(item)), 2)
     aver_grade.append(num)
 
-print(aver_grade)
-
-students_list = list(students)
-print(students_list)
-sorted_students = sorted(students_list)
-print(sorted_students)
+sorted_students = sorted(list(students))
 student_aver_grade = dict(zip(sorted_students, aver_grade))
-print(student_aver_grade)
+print("Ученик: Средний балл", student_aver_grade)
