@@ -19,7 +19,7 @@ is_prime = False
 for num in numbers:
     if num == 1:
         continue
-    for j in range(1, numbers[num - 1]):
+    for j in range(1, len(numbers)):
         if num % j == 0 and num != j and j != 1:
             is_prime = False
             break
