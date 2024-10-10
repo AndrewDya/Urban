@@ -8,7 +8,6 @@ def single_root_words(root_word, *other_words):
 
     return same_words
 
+
 result = single_root_words("cat", "category", "cater", "dog", "catnip", "at")
 print(result)  # Вывод: ['category', 'cater', 'catnip', 'at']
-
-
